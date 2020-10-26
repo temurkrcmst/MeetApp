@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetApp", "MeetApp\MeetApp.csproj", "{4D19C6A5-FB5F-4081-A272-D02D226D1648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template", "Template\Template.csproj", "{C053EDA8-3C58-49A2-AB73-896AF3C1881D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D19C6A5-FB5F-4081-A272-D02D226D1648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D19C6A5-FB5F-4081-A272-D02D226D1648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D19C6A5-FB5F-4081-A272-D02D226D1648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D19C6A5-FB5F-4081-A272-D02D226D1648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C053EDA8-3C58-49A2-AB73-896AF3C1881D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C053EDA8-3C58-49A2-AB73-896AF3C1881D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C053EDA8-3C58-49A2-AB73-896AF3C1881D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C053EDA8-3C58-49A2-AB73-896AF3C1881D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECE2ECD0-365B-4273-94F8-D7E72757DF7F}
+	EndGlobalSection
+EndGlobal

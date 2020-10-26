@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="//static.codepen.io/assets/editor/live/console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js"></script>
+    <script src="//static.codepen.io/assets/editor/live/css_live_reload_init-890dc39bb89183d4642d58b1ae5376a0193342f9aed88ea04330dc14c8d52f55.js"></script>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" type="image/x-icon" href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+    <link rel="mask-icon" type="" href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+    <link rel="canonical" href="https://codepen.io/shahjehan/pen/NGWaKq">
+
+    <!--<style class="cp-pen-styles">
+        .liveSearchBar, .liveSearchBar li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+            .liveSearchBar, .liveSearchBar li a {
+                color: #000000;
+                text-decoration: none;
+            }
+        /*body {
+                margin: 0;
+                background: #01B4FF;
+                color: #fff;
+                font-weight: 700;
+                font-family: 'Brush Script MT', cursive;
+                font-size: 20px;
+            }*/
+        #live-search fieldset {
+            border: 0;
+            padding-left: 0;
+        }
+
+        :focus {
+            outline: none;
+        }
+
+        .text-input {
+            height: 30px;
+            background: none;
+            border: 1px solid #000000;
+            padding: 5px;
+            font-size: 20px;
+            color: #000000;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #000000;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+            color: #000000;
+        }
+
+        ::-moz-placeholder { /* Firefox 19+ */
+            color: #000000;
+        }
+
+        :-ms-input-placeholder {
+            color: #000000;
+        }
+
+        #uItem {
+            display: none;
+        }
+    </style>-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SB Admin - Toplantı Uygulaması Template</title>
+    <!-- Bootstrap core CSS-->
+    <link href="Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="Assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="Assets/css/sb-admin.css" rel="stylesheet">
+    <link href="Assets/Ekstra/dist/css/bootstrap-select.css" rel="stylesheet" />
+    <link href="Assets/css/mycss.css" rel="stylesheet" />
+
+</head>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light c-w fixed-top " id="mainNav">
+        <a class="navbar-brand text-xl-left" href="index.html">Toplantı Uygulaması</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <img src="http://www.basarsoft.com.tr/wp-content/uploads/2017/10/site_logo-8-2.png" width=160 height=40>
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Subeler">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSubeler" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-home"></i>
+                        <span class="nav-link-text">Subeler</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseSubeler">
+                        <li>
+                            <a href="Branches.html">Tüm Subeler</a>
+                        </li>
+                        <li>
+                            <a href="AddBranch.html">Sube Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Salonlar">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSalonlar" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-file"></i>
+                        <span class="nav-link-text">Salonlar</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseSalonlar">
+                        <li>
+                            <a href="Salloons.html">Tüm Salonlar</a>
+                        </li>
+                        <li>
+                            <a href="AddSalloon.html">Salon Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Kullanıcılar">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-sitemap"></i>
+                        <span class="nav-link-text">Kullanıcılar</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseMulti">
+                        <li>
+                            <a href="Users.html">Kullanıcılar</a>
+                        </li>
+                        <li>
+                            <a href="AddUser.html">Kullanıcı Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="ToplantıGeçmişleri">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseToplantıGeçmişleri" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-history"></i>
+                        <span class="nav-link-text">Toplantı Geçmişleri</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseToplantıGeçmişleri">
+                        <li>
+                            <a href="MeetingHistories.html">Tüm Toplantı Geçmişleri</a>
+                        </li>
+                        <li>
+                            <a href="AddMeetingHistory.html">Toplantı Geçmişi Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="nav-link text-center" id="sidenavToggler">
+                <i class="fa fa-fw fa-angle-left"></i>
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Şunun için ara...">
+                            <span class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-fw fa-sign-out"></i>Çıkış
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Yönetim Paneli</a>
+                </li>
+                <li class="breadcrumb-item active">Salloon Güncelleme</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <div class="infoArea">
+
+                    </div>
+                    <div class="form-group">
+
+                        <div class="col-md-6">
+                            <label for="exampleInputName">Subeler</label>
+
+                            <div class="salonbilgileri1">
+
+                                <select class="custom-select" id="Branch">
+                                    <option>Seçiniz...</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <!--<div id="live-search" action="" class="styled" method="post">
+                                    <fieldset>
+                                        <input type="text" class="text-input" id="filter" >
+                                        <span id="filter-count"></span>
+                                    </fieldset>
+                                </div>
+
+                                <nav>
+                                    <div>
+                                        <ul class="liveSearchBar" id="uItem" onclick="">
+
+                                            <li><a href="#">Ankara</a></li>
+                                            <li><a href="#">Istanbul</a></li>
+                                            <li><a href="#">Bolu</a></li>
+                                            <li><a href="#">Bursa</a></li>
+                                            <li><a href="#">Adana</a></li>
+                                            <li><a href="#">İzmir</a></li>
+                                            <li><a href="#">Nevşehir</a></li>
+                                            <li><a href="#">Gaziantep</a></li>
+                                            <li><a href="#">Giresun</a></li>
+                                            <li><a href="#">Yalova</a></li>
+                                            <li><a href="#">Zonguldak</a></li>
+                                            <li><a href="#">Tokat</a></li>
+                                            <li><a href="#">Edirne</a></li>
+
+                                        </ul>
+                                    </div>
+                                </nav>
+
+
+                            </div>
+
+                        </div>-->
+                        <div class="col-md-6">
+                            <label for="exampleInputLastName">Salon Kapasite</label>
+                            <!--<input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" placeholder="Şirket Adresi Giriniz">-->
+
+                            <div class="salonbilgileri1" ">
+                                <select class="custom-select" id="Capacity">
+                                    <option selected disabled>Seçiniz...</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="65">65</option>
+                                    <option value="68">68</option>
+                                    <option value="21">21</option>
+                                    <option value="9">9</option>
+                                    <option value="50">50</option>
+                                    <option value="28">28</option>
+                                    <option value="27">27</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="exampleInputEmail1">Projeksiyon Durumu</label>
+                            <!--<input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Şirket Telefonu Giriniz">-->
+
+                            <div class="salonbilgileri1">
+                                <select class="custom-select" id="ProjectionStatus">
+                                    <!--<option selected>Choose...</option>-->
+                                    <option value="MüsaitDegil">Müsait Degil</option>
+                                    <option value="Müsait">Müsait</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="exampleInputEmail1">İnternet Durumu</label>
+                            <!--<input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Şirket Telefonu Giriniz">-->
+                            <div class="container" id="InternetStatus">
+                                <form>
+                                    <label class="radio-inline bgvar">
+                                        <input type="radio" id="ConnTrue" name="optconnection" value="true">Baglantı Var
+                                    </label>
+                                    <label class="radio-inline bgyok"></label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="ConnFalse" name="optconnection" checked value="false">Baglantı Yok
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="exampleInputEmail1">Klima Durumu</label>
+                            <!--<input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Şirket Telefonu Giriniz">-->
+
+                            <div class="salonbilgileri1">
+                                <div class="container" id="AirConditioningStatus">
+                                    <form>
+                                        <label class="radio-inline btncalisiyor">
+                                            <input type="radio" id="climateTrue" name="optclimate" value="true">Çalışıyor
+                                        </label>
+                                        <label class="radio-inline btncalismiyor">
+                                            <input type="radio" id="climateFalse" name="optclimate" checked value="false">Çalışmıyor
+                                        </label>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="exampleInputEmail1">Yiyecek-İçecek Durumu</label>
+                            <!--<input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Şirket Telefonu Giriniz">-->
+
+                            <div class="salonbilgileri1">
+                                <label class="container btnvar">
+                                    Yiyecek-İçecek
+                                    <input type="checkbox" id="ProvisionsStatus">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="exampleInputEmail1">Salon Adı</label>
+
+                            <input class="form-control" id="SalloonName" type="text" aria-describedby="nameHelp" placeholder="Salon Adı giriniz">
+
+                        </div>
+                        <!--<div class="col-md-6">
+                            <label for="exampleInputEmail1">Salon ID</label>
+                            <div class="salonbilgileri1" ">
+                                <select class="custom-select" id="BranchID">
+                                    <option selected>Branch ID Seçiniz...</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+
+                            </div>
+
+                        </div>-->
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary btn-block" id="BtnUpdateSalloon" href="#">Güncelle</button>
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary btn-danger" id="BtnDeleteSalloon" href="#">Sil</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Your Website 2018</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="Login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="Assets/vendor/jquery/jquery.min.js"></script>
+    <script src="Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="Assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="Assets/js/sb-admin.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/4.0/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0/js/bootstrap.min.js"></script>-->
+
+    <script src="Assets/Ekstra/bootstrap-select.js"></script>
+    <script>
+        $('.selectpicker').selectpicker({
+            style: 'btn-info',
+            size: 4
+        });
+    </script>
+
+    <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="Assets/js/Meet.js"></script>
+
+    <script>
+        /*seçilen elemanının değerini çekme için istanbulu tıkladığımda çekme işlemi*/
+        //$('#uItem li').click(function () {
+        //    var index = $(this).index();
+        //    var text = $(this).text();
+        //    alert('Index is: ' + index + ' and text is ' + text);
+        //});
+
+        var getID;
+        $(document).ready(function () {
+
+            getID = getUrlVars()["id"];
+            //console.log("Salon bilgileri alınıyor.");
+
+            var parameters = {
+                Column: "ID",
+                ColumnType: "string",
+                Value: getID,
+                Statement: "="
+            };
+
+            MeetApp.Salloons.Get(parameters, function (data) {
+
+                var o = data[0];
+                console.log(data);
+                $("#ID").val(o.ID);
+                $("#Branch option[value='" + o.Branch + "']").attr("selected", "selected");
+                $("#Capacity option[value='" + o.Capacity + "']").attr("selected", "selected");
+                $("#ProjectionStatus option[value='" + o.ProjectionStatus + "']").attr("selected", "selected");
+                $("#InternetStatus").val(o.InternetStatus);
+                $("#AirConditioningStatus").val(o.AirConditioningStatus);
+                $("#SalloonName").val(o.SalloonName);
+                $("#BranchID").val(o.BranchID);
+
+
+
+                MeetApp.Branches.Get(null, function (branchData) {
+                    for (var i = 0; i < branchData.length; i++) {
+
+                        var opt = $("<option value=" + branchData[i].ID + ">" + branchData[i].Name + "</option>");
+
+                        if (branchData[i].ID == o.Branch) {
+                            $(opt).attr("selected", "selected");
+                        }
+
+                        $("#Branch").append(opt);
+                    }
+                });
+
+
+                if (o.ProvisionsStatus) {
+                    $("#ProvisionsStatus").prop("checked", true);
+                }
+
+
+                if (o.InternetStatus) {
+
+                    $('#InternetStatus').prop("checked", false);
+                    $("input[name='optconnection']").removeAttr("checked");
+                    $("#ConnTrue").prop("checked", "true");
+
+                }
+
+                if (o.AirConditioningStatus) {
+                    $('#AirConditioningStatus').prop("checked", false);
+
+                    $("input[name='optclimate']").removeAttr("checked");
+                    $("#climateTrue").prop("checked", "true");
+                }
+
+                //console.log(data[0]);
+
+
+
+                var optconnection = o.InternetStatus;
+
+                if (optconnection == true) {
+                    $("#internetstatus1").prop("checked", true);
+                    $(".bgvar").addClass("active");
+                }
+                else {
+                    $("#internetstatus2").prop("checked", true);
+                    $(".bgyok").addClass("active");
+                }
+
+
+                var optclimate = o.AirConditioningStatus;
+
+                if (optclimate == true) {
+                    $("#AirConditioningStatus1").prop("checked", true);
+                    $(".btncalisiyor").addClass("active");
+                }
+                else {
+                    $("#AirConditioningStatus2").prop("checked", true);
+                    $(".btncalismiyor").addClass("active");
+                }
+
+
+                var optradiooo = o.ProvisionsStatus;
+
+                if (optradiooo == true) {
+                    $("#ProvisionsStatus1").prop("checked", true);
+                    $(".btnvar").addClass("active");
+                }
+                else {
+                    $("#ProvisionsStatus2").prop("checked", true);
+                    $(".btnvar1").addClass("active");
+                }
+
+
+            });
+        })
+
+    </script>
+
+    <!--<script>
+            /*tıkladığımda listeyi göstermesi için*/
+
+            $('#filter').click(function () {
+                $('#uItem').css('display', 'inline');
+
+            });
+    </script>-->
+
+</body>
+</html>

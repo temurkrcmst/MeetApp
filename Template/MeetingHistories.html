@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SB Admin - Toplantı Uygulaması Template</title>
+    <!-- Bootstrap core CSS-->
+    <link href="Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="Assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="Assets/css/sb-admin.css" rel="stylesheet">
+    <link href="Assets/css/mycss.css" rel="stylesheet" />
+    <link href="Assets/css/mycss.css" rel="stylesheet" />
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light c-w fixed-top " id="mainNav">
+        <a class="navbar-brand text-xl-left" href="index.html">Toplantı Uygulaması</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <img src="http://www.basarsoft.com.tr/wp-content/uploads/2017/10/site_logo-8-2.png" width=160 height=40>
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Subeler">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSubeler" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-home"></i>
+                        <span class="nav-link-text">Subeler</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseSubeler">
+                        <li>
+                            <a href="Branches.html">Tüm Subeler</a>
+                        </li>
+                        <li>
+                            <a href="AddBranch.html">Sube Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Salonlar">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSalonlar" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-file"></i>
+                        <span class="nav-link-text">Salonlar</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseSalonlar">
+                        <li>
+                            <a href="Salloons.html">Tüm Salonlar</a>
+                        </li>
+                        <li>
+                            <a href="AddSalloon.html">Salon Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Kullanıcılar">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-sitemap"></i>
+                        <span class="nav-link-text">Kullanıcılar</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseMulti">
+                        <li>
+                            <a href="Users.html">Kullanıcılar</a>
+                        </li>
+                        <li>
+                            <a href="AddUser.html">Kullanıcı Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="ToplantıGeçmişleri">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseToplantıGeçmişleri" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-history"></i>
+                        <span class="nav-link-text">Toplantı Geçmişleri</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseToplantıGeçmişleri">
+                        <li>
+                            <a href="MeetingHistories.html">Tüm Toplantı Geçmişleri</a>
+                        </li>
+                        <li>
+                            <a href="AddMeetingHistory.html">Toplantı Geçmişi Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a class="nav-link text-center" id="sidenavToggler">
+                        <i class="fa fa-fw fa-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Şunun için ara...">
+                            <span class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-fw fa-sign-out"></i>Çıkış
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Yönetim Paneli</a>
+                </li>
+                <li class="breadcrumb-item active">Tablo Formu</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="card-body">
+                        <div class="infoArea">
+
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered dataTable col-md-12" id="dataTable" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Your Website 2018</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="Login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="Assets/vendor/jquery/jquery.min.js"></script>
+    <script src="Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="Assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="Assets/js/sb-admin.min.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="Assets/js/Meet.js"></script>
+
+
+    <script>
+        var count = 0;
+        $(document).ready(function () {
+
+
+            // $("#dataTable").remove();
+            var obj = {
+                Column: "ID",
+                ColumnType: "string",
+                Value: "",
+                Statement: ""
+            }
+
+            MeetApp.MeetingHistories.Get(obj, function (data) {
+
+                var items = '';
+                var rows = " <thead>" +
+                    "<tr role='row'>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Toplantı Başlığı</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Başlangıç Tarihi</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Bitiş Tarihi</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Katılımcı Sayısı</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Şube Bilgisi</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Salon Bilgisi</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Moderatör</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>İşlem</th>" +
+
+
+                    +"</thead>";
+                $('#dataTable').append(rows);
+                $.each(data, function (i, item) {
+                    var rows = '<tr role="row" class="odd">' +
+                        ' <td class="sorting_1">' + item.Title + '</td>' +
+                        '<td>' + item.StartDate + '</td>' +
+                        '<td>' + item.FinishDate + '</td>' +
+                        '<td>' + item.ParticipantNumber + '</td>' +
+                        '<td>' + item.BranchID + '</td>' +
+                        '<td>' + item.Salloon + '</td>' +
+                        '<td>' + item.Moderator + '</td>' +
+                        '<td>' +
+                        '<a href="#" data-id="' + item.ID + '"data-name="' + item.Title + '" class="btn btn-danger  delete">Kaldır</a>' +
+                        '<a href= "EditMeetingHistory.html?id=' + item.ID + '&key=' + localStorage.getItem("token") +'" class="btn btn-success " > Düzenle</a > ' +
+                        '</td>' +
+                        ' </tr>';
+                    $('#dataTable').append(rows);
+                    count++;
+                });
+
+                var table = $('#dataTable').DataTable();
+                $('#dataTable tbody').on('click', '.delete', function () {
+                    var TableRow = this;
+                    if (confirm('Kayıdı silmek istediğinden eminmisiniz?')) {
+                        var id = $(this).attr("data-id");
+                        var isim = $(this).attr("data-name");
+
+                        var deleteObj = {
+                            FilterCol: "ID",
+                            FilterVal: id,
+                        };
+                    }
+
+
+                    MeetApp.MeetingHistories.Delete(deleteObj, function (data) {
+                        var alert = $('<div class="alert alert-success">' + isim + 'Başarıyla Silindi..</div>');
+
+                        if (data.Type == 0) {
+                            $(alert).html("Kayıt silme esnasında hata oluştu");
+                            $(alert).removeClass("alert-success");
+                            $(alert).addClass("alert-danger");
+                        }
+                        else {
+                            table.row($(TableRow).parents('tr')).remove().draw();
+                        }
+                        $(".infoArea").html("").append(alert);
+
+                    });
+                });
+            });
+
+        });
+
+
+
+
+
+
+
+
+    </script>
+
+    <script src="Assets/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="Assets/vendor/datatables/dataTables.bootstrap4.js"></script>
+
+</body>
+
+</html>

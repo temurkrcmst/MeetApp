@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="//static.codepen.io/assets/editor/live/console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js"></script>
+    <script src="//static.codepen.io/assets/editor/live/css_live_reload_init-890dc39bb89183d4642d58b1ae5376a0193342f9aed88ea04330dc14c8d52f55.js"></script>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" type="image/x-icon" href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+    <link rel="mask-icon" type="" href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+    <link rel="canonical" href="https://codepen.io/shahjehan/pen/NGWaKq">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SB Admin - Toplantı Uygulaması Template</title>
+    <!-- Bootstrap core CSS-->
+    <link href="Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="Assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="Assets/css/sb-admin.css" rel="stylesheet">
+    <link href="Assets/Ekstra/dist/css/bootstrap-select.css" rel="stylesheet" />
+    <link href="Assets/css/mycss.css" rel="stylesheet" />
+
+</head>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light c-w fixed-top " id="mainNav">
+        <a class="navbar-brand text-xl-left" href="index.html">Toplantı Uygulaması</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <img src="http://www.basarsoft.com.tr/wp-content/uploads/2017/10/site_logo-8-2.png" width=160 height=40>
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Subeler">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSubeler" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-home"></i>
+                        <span class="nav-link-text">Subeler</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseSubeler">
+                        <li>
+                            <a href="Branches.html">Tüm Subeler</a>
+                        </li>
+                        <li>
+                            <a href="AddBranch.html">Sube Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Salonlar">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSalonlar" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-file"></i>
+                        <span class="nav-link-text">Salonlar</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseSalonlar">
+                        <li>
+                            <a href="Salloons.html">Tüm Salonlar</a>
+                        </li>
+                        <li>
+                            <a href="AddSalloon.html">Salon Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Kullanıcılar">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-sitemap"></i>
+                        <span class="nav-link-text">Kullanıcılar</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseMulti">
+                        <li>
+                            <a href="Users.html">Kullanıcılar</a>
+                        </li>
+                        <li>
+                            <a href="AddUser.html">Kullanıcı Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="ToplantıGeçmişleri">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseToplantıGeçmişleri" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-history"></i>
+                        <span class="nav-link-text">Toplantı Geçmişleri</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseToplantıGeçmişleri">
+                        <li>
+                            <a href="MeetingHistories.html">Tüm Toplantı Geçmişleri</a>
+                        </li>
+                        <li>
+                            <a href="AddMeetingHistory.html">Toplantı Geçmişi Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a class="nav-link text-center" id="sidenavToggler">
+                        <i class="fa fa-fw fa-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Şunun için ara...">
+                            <span class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-fw fa-sign-out"></i>Çıkış
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Yönetim Paneli</a>
+                </li>
+                <li class="breadcrumb-item active">Salon Düzenle</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="card-body">
+                        <div class="infoArea">
+
+                        </div>
+                        <div class="table-responsive">
+
+                            <table class="table table-bordered dataTable col-md-12" id="dataTable" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                                <tbody></tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Your Website 2018</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="Login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="Assets/vendor/jquery/jquery.min.js"></script>
+    <script src="Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="Assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="Assets/js/sb-admin.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>-->
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/4.0/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0/js/bootstrap.min.js"></script>-->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript"></script>
+
+    <script src="Assets/Ekstra/Ela.js"></script>
+    <script src="Assets/Ekstra/Havva.js"></script>
+    <script src="Assets/Ekstra/Temur.js"></script>
+    <script src="Assets/Ekstra/Beyza.js"></script>
+
+    <script src="Assets/js/Meet.js"></script>
+    <script src="Assets/Ekstra/bootstrap-select.js"></script>
+
+    <script>
+        $('.selectpicker').selectpicker({
+            style: 'btn-info',
+            size: 4
+        });
+    </script>
+
+    <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#filter").keyup(function () {
+
+                // Retrieve the input field text and reset the count to zero
+                var filter = $(this).val(), count = 0;
+
+                // Loop through the comment list
+                $("nav ul li").each(function () {
+
+                    // If the list item does not contain the text phrase fade it out
+                    if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                        $(this).fadeOut();
+
+                        // Show the list item if the phrase matches and increase the count by 1
+                    } else {
+                        $(this).show();
+                        count++;
+                    }
+                });
+
+                // Update the count
+                var numberItems = count;
+                $("#filter-count").text("Number of Filter = " + count);
+            });
+        });
+        //# sourceURL=pen.js
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            //   $("#dataTable").remove();
+
+
+
+            var parameters = {
+                Column: "ID",
+                ColumnType: "string",
+                Value: "",
+                Statement: ""
+            }
+        
+            MeetApp.Salloons.Get(parameters, function (data) {
+
+                var items = '';
+                var rows = " <thead>" +
+                    "<tr role='row'>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Şube Adı</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Salon Kapasitesi</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>İnternet Durumu</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Klima Durumu</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Projeksiyon Durumu</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Yiyecek-İçecek Durumu</th>" +
+                    " <th class='sorting_asc' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>Salon Adı</th>" +
+                    " <th class='sorting' tabindex='0' aria-controls='dataTable' rowspan='1' colspan='1' aria-sort='ascending' aria-label='Name: activate to sort column descending' style='width: 55px;'>İslem</th>"
+
+                    + "</thead>";
+                $('#dataTable').append(rows);
+                $.each(data, function (i, item) {
+                    var rows = '<tr role="row" class="odd">' +
+                        ' <td class="sorting_1">' + item.Branch + '</td>' +
+                        '<td>' + item.Capacity + '</td>' +
+                        '<td>' + item.AirConditioningStatus + '</td>' +
+                        '<td>' + item.InternetStatus + '</td>' +
+                        '<td>' + item.ProjectionStatus + '</td>' +
+                        '<td>' + item.ProvisionsStatus + '</td>' +
+                        '<td>' + item.SalloonName + '</td>' +
+                        '<td>' +
+                        '<a href="EditSalloon.html?id=' + item.ID + '&key=' + localStorage.getItem("token") +'" class="btn btn-success btn-sm btnBoyut">Düzenle</a>' +
+                        '<a href="#" data-id="' + item.ID +'" data-name="' + item.Branch + '" class="btn btn-danger btn-sm btnBoyut deleteSalloon">Kaldır</a>' +
+                        '</td>' +
+                        ' </tr>';
+                    $('#dataTable tbody').append(rows);
+
+                });
+                var table = $("#dataTable").DataTable();
+
+
+
+                $('#dataTable tbody').on('click', '.deleteSalloon', function () {
+                    var tableRow = this;
+                    if (confirm('Kayıdı silmek istediğinizden emin misiniz?')) {
+
+
+                        var id = $(this).attr("data-id");
+                        var isim = $(this).attr("data-name");
+
+                        var deleteObject = {
+                            FilterCol: "ID",
+                            FilterVal: id,
+                        };
+
+                        MeetApp.Salloons.Delete(deleteObject, function (data) {
+
+                            var alert = $('<div class="alert alert-success"> ' + isim + ' Basarıyla silindi..</div>');
+                            if (data.type == 0) {
+                                $(alert).html("Kayıt silme esansında hata oluştu..");
+                                $(alert).removeClass("alert-succees");
+                                $(alert).addClass("alert-danger");
+                            }
+                            else {
+                                table.row($(tableRow).parents('tr')).remove().draw();
+                            }
+
+                            $(".infoArea").html("").append(alert);
+
+
+                        });
+
+
+                    } else {
+
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
+
+    <script src="Assets/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="Assets/vendor/datatables/dataTables.bootstrap4.js"></script>
+
+
+</body>
+
+</html>

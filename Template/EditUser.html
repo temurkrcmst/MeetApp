@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SB Admin - Toplantı Uygulaması Template</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="Assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="Assets/css/sb-admin.css" rel="stylesheet">
+</head>
+
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light c-w fixed-top " id="mainNav">
+        <a class="navbar-brand text-xl-left" href="index.html">Toplantı Uygulaması</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <img src="http://www.basarsoft.com.tr/wp-content/uploads/2017/10/site_logo-8-2.png" width=160 height=40>
+            <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Subeler">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSubeler" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-home"></i>
+                        <span class="nav-link-text">Subeler</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseSubeler">
+                        <li>
+                            <a href="Branches.html">Tüm Subeler</a>
+                        </li>
+                        <li>
+                            <a href="AddBranch.html">Sube Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Salonlar">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSalonlar" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-file"></i>
+                        <span class="nav-link-text">Salonlar</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseSalonlar">
+                        <li>
+                            <a href="Salloons.html">Tüm Salonlar</a>
+                        </li>
+                        <li>
+                            <a href="AddSalloon.html">Salon Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Kullanıcılar">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-sitemap"></i>
+                        <span class="nav-link-text">Kullanıcılar</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseMulti">
+                        <li>
+                            <a href="Users.html">Kullanıcılar</a>
+                        </li>
+                        <li>
+                            <a href="AddUser.html">Kullanıcı Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="ToplantıGeçmişleri">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseToplantıGeçmişleri" data-parent="#exampleAccordion">
+                        <i class="fa fa-fw fa-history"></i>
+                        <span class="nav-link-text">Toplantı Geçmişleri</span>
+                    </a>
+                    <ul class="sidenav-second-level collapse" id="collapseToplantıGeçmişleri">
+                        <li>
+                            <a href="MeetingHistories.html">Tüm Toplantı Geçmişleri</a>
+                        </li>
+                        <li>
+                            <a href="AddMeetingHistory.html">Toplantı Geçmişi Ekle</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a class="nav-link text-center" id="sidenavToggler">
+                        <i class="fa fa-fw fa-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Şunun için ara...">
+                            <span class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-fw fa-sign-out"></i>Çıkış
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Subeler</a>
+                </li>
+                <li class="breadcrumb-item active">Kullanıcı Ekleme</li>
+            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <div class="infoArea">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <form id="updateForm" action="#" novalidate>
+                    <div class="form-group">
+
+                        <div class="col-md-6">
+                            <label for="Name">Ad</label>
+                            <input class="form-control" id="Name" type="text" placeholder="Adınızı giriniz..." required>
+                            <div class="invalid-feedback">
+                                Lütfen adınızı giriniz...
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="Surname">Soyad</label>
+                            <input class="form-control" id="Surname" type="text" placeholder="Soyadınızı giriniz..." required>
+                            <div class="invalid-feedback">
+                                Lütfen soyadınızı giriniz...
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="Degree">Unvan</label>
+                            <select class="custom-select" id="Degree">
+                                <option selected disabled> Unvan seçiniz...  </option>
+                                <option value="İş Geliştirme Uzmanı">İş Geliştirme Uzmanı</option>
+                                <option value="Pazarlama ve Satış Uzmanı">Pazarlama ve Satış Uzmanı</option>
+                                <option value="Full Stack Developer">Full Stack Developer</option>
+                                <option value="Yönetici Asistanı">Yönetici Asistanı</option>
+                                <option value="Bilgisayar Mühendisi">Bilgisayar Mühendisi</option>
+                            </select>
+                        </div>
+                        <div class="invalid-feedback">
+                            Lütfen unvan seçiniz...
+                        </div>
+                        <div class="col-md-6">
+                            <label for="BranchID">Şube</label>
+                            <select class="custom-select" id="BranchID">
+                                <option selected disabled> Şubenizi seçiniz...  </option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="Email">E-mail Adresi</label>
+                            <input class="form-control" id="Email" type="text" placeholder="E-mail adresinizi giriniz..." required>
+                            <div class="invalid-feedback">
+                                Lütfen e-mail adresi giriniz...
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6" id="FormPhone">
+                            <label for="Phone">Telefon Numarası</label><br />
+                            <input class="form-control" id="Phone" name="Phone" type="text" maxlength="14" placeholder="(XXX) XXX-XXXX" required>
+                            <div class="invalid-feedback">
+                                Lütfen telefon numarası giriniz...
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <label for="Password">Şifre</label>
+                            <input class="form-control" id="Password" type="password" placeholder="Şifrenizi giriniz..." required>
+                            <div class="invalid-feedback">
+                                Lütfen şifre giriniz...
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="ConfirmPassword">Şifrenizi Onaylayın</label>
+                            <input class="form-control" id="ConfirmPassword" type="password" placeholder="Şifrenizi yeniden giriniz..." required>
+                            <div class="invalid-feedback">
+                                Lütfen şifrenizi yeniden giriniz...
+                            </div>
+                            <span id='message'></span>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <p> Kullanıcı Yetkisi</p>
+                            <div id="Authority" class="btn-group btn-group-toggle" data-toggle="buttons">
+
+                                <label class="btn btn-secondary adminBtn">
+                                    <input type="radio" name="userType" id="Admin" value="Admin" autocomplete="off"> Admin
+                                </label>
+                                <label class="btn btn-secondary userBtn">
+                                    <input type="radio" name="userType" id="User" value="Kullanıcı" autocomplete="off"> Kullanıcı
+                                </label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Lütfen bu alanı işaretleyiniz...
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p> Kullanıcı Durumu </p>
+                            <div id="State" class="btn-group btn-group-toggle" data-toggle="buttons">
+
+                                <label class="btn btn-secondary activeBtn">
+                                    <input type="radio" class="button" name="userState" id="Active" value="Aktif" autocomplete="off"> Aktif
+                                </label>
+                                <label class="btn btn-secondary passiveBtn">
+                                    <input type="radio" class="button" name="userState" id="Passive" value="Pasif" autocomplete="off"> Pasif
+                                </label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Lütfen bu alanı işaretleyiniz...
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-primary btn-block" id="Update" href="#">Kullanıcıyı Güncelle</button>
+
+            </div>
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-danger" id="Delete" href="#">Kullanıcıyı Sil</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+        <div class="container">
+            <div class="text-center">
+                <small>Copyright © Your Website 2018</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Çıkış Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Çıkış" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="Login.html">Çıkış</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="Assets/vendor/jquery/jquery.min.js"></script>
+    <script src="Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="Assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="Assets/js/sb-admin.min.js"></script>
+    <script src="Assets/js/customJQuery.js"></script>
+    <script src="Assets/js/Meet.js"></script>
+
+    <script>
+
+        var getID;
+        $(document).ready(function () {
+            getID = getUrlVars()["id"];
+
+            var parameters = {
+                Column: "ID",
+                ColumnType: "string",
+                Value: getID,
+                Statement: "="    // Statement: "=" = işareti kaldırdığımızda tablodaki tüm veriler gelir
+            };
+
+
+            MeetApp.Users.Get(parameters, function (data) {
+
+
+                var obj = data[0];
+
+                $("#ID").val(obj.ID);
+                $("#Name").val(obj.Name);
+                $("#Surname").val(obj.Surname);
+                $("#Email").val(obj.Email);
+                $("#Phone").val(obj.Phone);
+                $("#Password").val(obj.Password);
+                $("#ConfirmPassword").val(obj.ConfirmPassword);
+                $("#State").val(obj.State);
+                $("#Authority").val(obj.Authority);
+                $("#Degree option[value='" + obj.Degree + "']").attr("selected", "selected");
+                $("#BranchID option[value='" + obj.BranchID + "']").attr("selected", "selected");
+
+                MeetApp.Branches.Get(null, function (branchData) {
+
+                    for (var i = 0; i < branchData.length; i++) {
+
+                        var opt = $("<option value=" + branchData[i].ID + ">" + branchData[i].Name + "</option>");
+
+                        if (branchData[i].ID == obj.BranchID) {
+                            $(opt).attr("selected", "selected");
+                        }
+                        $("#BranchID").append(opt);
+
+                    }
+                });
+
+
+                var userType = obj.Authority;
+                if (userType == "Admin") {
+                    $("#Admin").prop("checked", true);
+                    $(".adminBtn").addClass("active");
+
+                }
+                else {
+                    $("#User").prop("checked", true);
+                    $(".userBtn").addClass("active");
+                }
+
+
+                var State = obj.State;
+                if (State == "Aktif") {
+                    $("#Active").prop("checked", true);
+                    $(".activeBtn").addClass("active");
+                }
+
+                else {
+                    $("#Passive").prop("checked", true);
+                    $(".passiveBtn").addClass("active");
+                }
+
+            });
+
+        });
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
